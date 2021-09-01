@@ -11,10 +11,5 @@ public class NavigationProp
     public Task Task { get; set; }
     public User User { get; set; }
 
-    protected void OnModelCreating(ModelBuilder modelBuilder)//создание таблиц
-    {
-        modelBuilder.Entity<Task>().ToTable("Tasks");
-        modelBuilder.Entity<NavigationProp>().ToTable("NPs");
-        modelBuilder.Entity<User>().ToTable("Users");
-    }
+    
 }

@@ -8,10 +8,20 @@ public class User
     public string Patronic { get; set; }
     public string Email { get; set; }
 
+    public User()
+    {
+        this.ID = 0;
+        this.Name = "";
+        this.Surname = "";
+        this.Patronic = "";
+        this.Email = "";
+    }
 
     public string UserInfo()
     {
         return $"ID: {this.ID} Surname: {this.Surname} Name: {this.Name} Patronic: {this.Patronic}";
     }
+
+
 
 }
