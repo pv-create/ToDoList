@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using ToDoList.Models;
+using ToDoList.Data;
 
 namespace ToDoList.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+
+    private DMDContext db;
 
     public HomeController(ILogger<HomeController> logger)
     {
@@ -27,4 +30,6 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+    
 }

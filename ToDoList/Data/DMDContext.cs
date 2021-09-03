@@ -10,8 +10,8 @@ public class DMDContext: DbContext
         Database.EnsureCreated();   // создаем базу данных при первом обращении
     }
 
-    public DbSet<Task> Courses { get; set; }
+    public DbSet<Task> Tasks { get; set; }
     public DbSet<NavigationProp> Enrollments { get; set; }
-    public DbSet<User> Students { get; set; }
+    public DbSet<User> Users { get; set; }
 
 }
