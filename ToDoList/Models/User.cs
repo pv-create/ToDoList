@@ -6,6 +6,9 @@ public class User
     public string Name { get; set; }
     public string Surname { get; set; }
     public string Patronic { get; set; }
+    
+
+
     public string Number { get; set; }
 
     public User()
